@@ -9,4 +9,7 @@ echo "cleanuping..."
 brew cleanup
 brew cask cleanup
 
+echo "checking..."
+brew doctor
+
 echo "Finish!!"
