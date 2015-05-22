@@ -2,7 +2,7 @@
 
 echo "updating..."
 brew update
-brew upgrade -all
+brew upgrade --all
 brew cask update
 
 echo "cleanuping..."
