@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+echo "git pull..."
+cd ~/Document/shellscript/
+git pull
+
 echo "updating..."
 brew update
 brew upgrade --all
