@@ -2,20 +2,28 @@
 
 Books=~/Downloads/Manga
 
+# isolate zip files
 mkdir $Books/zip
 mv $Books/*.zip $Books/zip
 
 # cut OuthorName
-$Books/\(成年コミック* | cut -d [ -f2 | cut -d ] -f1 > NameList.txt
+echo "Make NameList.txt"
+ZipFiles=~/Downloads/Manga/zip
+ls $ZipFiles/\(成年コミック* | cut -d [ -f2 | cut -d ] -f1 > $ZipFiles/NameList.txt
 
 # mkdir
-names=$Books/NameList.txt
+echo "Make directories"
+names=$ZipFiles/NameList.txt
 while read line
 do
     echo $line
-    mkdir $Books/$line
+    dir=$Books/$line
+    mkdir $dir
+    mv $ZipFiles/*$line* $dir/
 done < $names
 
-
+# Finish
+rm $ZipFiles/NameList.txt
+echo "Finish!!"
 
 
