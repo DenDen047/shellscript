@@ -14,6 +14,7 @@ brew cleanup
 brew cask cleanup
 
 echo "checking..."
+brew cask doctor
 brew doctor
 
 echo "Finish!!"
