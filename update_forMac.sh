@@ -1,14 +1,17 @@
 #!/bin/zsh
 
 echo "git pull..."
-#cd ~/Document/shellscript/
-#git pull
-
 shellDir=~/Documents/shellscript/
+dotDir=~/dotfiles/
 if [ -d $shellDir ]; then
     cd "$shellDir"
     git pull
 fi
+if [ -d $dotfiles ]; then
+    cd "$dotfiles"
+    git pull
+fi
+brew file pull
 
 echo "updating..."
 brew update
