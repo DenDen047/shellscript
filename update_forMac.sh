@@ -2,13 +2,18 @@
 
 echo "git pull..."
 shellDir=~/Documents/shellscript/
-dotDir=~/dotfiles/
+dotDir=~/dotfiles_forMac/
+toolDir=~/Documents/Tools/
 if [ -d $shellDir ]; then
     cd "$shellDir"
     git pull
 fi
-if [ -d $dotfiles ]; then
-    cd "$dotfiles"
+if [ -d $dotDir ]; then
+    cd "$dotDir"
+    git pull
+fi
+if [ -d $toolDir ]; then
+    cd "$toolDir"
     git pull
 fi
 brew file pull
