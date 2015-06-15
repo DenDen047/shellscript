@@ -1,9 +1,11 @@
 #!/bin/zsh
 
+Download=~/Downloads
 Books=~/Downloads/Manga
 
 # isolate zip files
 mkdir $Books/zip
+mv $Download/*.zip $Books/zip
 mv $Books/*.zip $Books/zip
 
 # cut OuthorName
