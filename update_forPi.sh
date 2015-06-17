@@ -3,6 +3,8 @@
 echo "git setting..."
 cd ~/shellscript/
 git pull
+cd ~/Tools/
+git pull
 
 echo "updating..."
 sudo apt-get -y update

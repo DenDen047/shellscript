@@ -3,6 +3,7 @@
 echo "creat SymbolicLink"
 ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "add Japanese Font"
 sudo localedef -f UTF-8 -i ja_JP ja_JP
