@@ -18,6 +18,12 @@ sudo apt-get install tmux
 sudo apt-get install zsh
 sudo apt-get install apache2
 
+# install MJPG-streamer
+# reference URL -> http://www.hiramine.com/physicalcomputing/raspberrypi/webcamstreaming.html
+sudo apt-get install subversion libjpeg-dev imagemagick
+svn co https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer mjpg-streamer
+cd mjpg-streamer
+make
 
 echo "update firmware..."
 sudo rpi-update
