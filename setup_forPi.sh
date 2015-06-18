@@ -10,17 +10,13 @@ sudo localedef -f UTF-8 -i ja_JP ja_JP
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-echo "install NeoBundle"
-git clone git://github.com/Shougo/neobundle.vim ~/dotfiles/.vim/bundle/neobundle.vim
-echo "Open vim"
-echo ":NeoBundleInstall"
-echo ":NeoBundleUpdate"
-echo ":NeoBundleClean"
 
 echo "install softwares..."
+sudo apt-apt update
 sudo apt-get install vim
 sudo apt-get install tmux
 sudo apt-get install zsh
+sudo apt-get install apache2
 
 
 echo "update firmware..."
