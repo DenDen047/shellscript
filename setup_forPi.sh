@@ -16,6 +16,7 @@ sudo apt-apt update
 sudo apt-get install vim
 sudo apt-get install tmux
 sudo apt-get install zsh
+sudo apt-get install tree
 sudo apt-get install apache2
 
 # install MJPG-streamer
