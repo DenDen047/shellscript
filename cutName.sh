@@ -25,6 +25,16 @@ do
     dir=$Books/$line
     mkdir $dir
     mv $ZipFiles/*$line* $dir/
+
+    # rename ZipFiles
+    ls $dir/ > $dir/FileList.txt
+    ls $dir/*.zip | awk -F'] ' '{print $2;}' | awk -F'(' '{print $1;}' > $dir/RenameList.txt
+    for filename in $dir/*
+    do
+        reName = `echo $filename | cut -d "] " -f2 | cut -d " (" -f1`
+        mv $filename $dir/$reName
+    done
+
 done < $names
 
 names=$ZipFiles/CGNameList.txt
