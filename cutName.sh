@@ -13,6 +13,7 @@ mv $Books/*.zip $Books/zip
 echo "Make NameList.txt"
 ZipFiles=~/Downloads/Manga/zip
 ls $ZipFiles/\(成年コミック* | cut -d [ -f2 | cut -d ] -f1 > $ZipFiles/NameList.txt
+ls $ZipFiles/\[*]* | cut -d [ -f2 | cut -d ] -f1 | cut -d "(" -f1 > $ZipFiles/NameList.txt
 ls $ZipFiles/\(同人CG集* | cut -d [ -f2 | cut -d  ] -f1 > $ZipFiles/CGNameList.txt
 
 # mkdir
