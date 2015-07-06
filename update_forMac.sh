@@ -19,6 +19,7 @@ fi
 brew file pull
 
 echo "updating..."
+pip install -U pip
 brew update
 brew upgrade --all
 brew cask update
