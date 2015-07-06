@@ -18,8 +18,8 @@ sudo apt-get install tmux
 sudo apt-get install zsh
 sudo apt-get install tree
 sudo apt-get install apache2
+sudo apt-get install python2.7 python2.7-dev python-virtualenv
 mkdir ~/Downloads
-curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | sudo python
 
 # install MJPG-streamer
 # reference URL -> http://www.hiramine.com/physicalcomputing/raspberrypi/webcamstreaming.html
