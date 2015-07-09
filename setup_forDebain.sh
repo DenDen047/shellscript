@@ -58,6 +58,11 @@ ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 
+# ====== VIM =======
+rm -rf ~/dotfiles/.vim/bundle/
+mkdir ~/dotfiles/.vim/bundle
+
+
 
 
 echo "Finish!!!"
