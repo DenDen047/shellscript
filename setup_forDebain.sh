@@ -59,7 +59,6 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.ssh/config ~/.ssh/config
 
 
-
 # ====== VIM =======
 rm -rf ~/dotfiles/.vim/bundle/
 mkdir ~/dotfiles/.vim/bundle
@@ -67,6 +66,10 @@ mkdir ~/dotfiles/.vim/bundle
 # ====== ZSH =======
 chsh -s /bin/zsh
 
+
+
+# When you need remotedesktop
+sudo apt-get install xrdp vnc4serve
 
 
 
