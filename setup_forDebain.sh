@@ -56,11 +56,16 @@ echo "create symbolic link..."
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.ssh/config ~/.ssh/config
+
 
 
 # ====== VIM =======
 rm -rf ~/dotfiles/.vim/bundle/
 mkdir ~/dotfiles/.vim/bundle
+
+# ====== ZSH =======
+chsh -s /bin/zsh
 
 
 
