@@ -11,6 +11,8 @@ sudo apt-get install openssh-server
 sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install zsh
+sudo apt-get install tmux
+sudo apt-get install upgrade
 echo -e "\n"
 
 
@@ -37,6 +39,7 @@ echo -e "\n"
 echo "Please paste id_rsa.pub to GitHub"
 echo -n "OK? [Y/n] "
 read check
+ssh -T git@github.com
 echo -e "\n"
 
 
