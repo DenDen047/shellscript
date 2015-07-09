@@ -11,6 +11,8 @@ sudo apt-get install openssh-server
 sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install zsh
+sudo apt-get install tmux
+sudo apt-get install upgrade
 echo -e "\n"
 
 
@@ -37,14 +39,13 @@ echo -e "\n"
 echo "Please paste id_rsa.pub to GitHub"
 echo -n "OK? [Y/n] "
 read check
+ssh -T git@github.com
 echo -e "\n"
 
 
 echo "git clone some directories..."
 cd ~/
 git clone https://github.com/DenDen047/dotfiles.git
-cd ~/Documents
-git clone https://github.com/DenDen047/shellscript.git
 # cd ./shellscript
 # git remote add origin https://github.com/DenDen047/shellscript.git
 # cd ./dotfiles
@@ -56,3 +57,7 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+
+
+
+echo "Finish!!!"
