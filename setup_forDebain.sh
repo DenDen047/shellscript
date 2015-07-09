@@ -12,7 +12,12 @@ sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install zsh
 sudo apt-get install tmux
+sudo apt-get install ibus-mozc
 sudo apt-get install upgrade
+sudo apt-get install python2.7 python2.7-dev python-virtualenv
+sudo apt-get install python-pygame
+sudo apt-get install python-opengl
+sudo apt-get install python-numpy python-numpy-doc python-numpy-dbg pyhon-numpydoc
 echo -e "\n"
 
 
