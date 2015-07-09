@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "update..."
 sudo apt-get update
@@ -43,8 +43,6 @@ echo -e "\n"
 echo "git clone some directories..."
 cd ~/
 git clone https://github.com/DenDen047/dotfiles.git
-cd ~/Documents
-git clone https://github.com/DenDen047/shellscript.git
 # cd ./shellscript
 # git remote add origin https://github.com/DenDen047/shellscript.git
 # cd ./dotfiles
@@ -56,3 +54,7 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+
+
+
+echo "Finish!!!"
