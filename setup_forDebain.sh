@@ -18,6 +18,7 @@ sudo apt-get install python2.7 python2.7-dev python-virtualenv
 sudo apt-get install python-pygame
 sudo apt-get install python-opengl
 sudo apt-get install python-numpy python-numpy-doc python-numpy-dbg pyhon-numpydoc
+sudo apt-get install ipython
 echo -e "\n"
 
 
