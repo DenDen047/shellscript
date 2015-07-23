@@ -16,15 +16,15 @@ mv $Books/*.zip $Books/zip
 #-------------------
 echo "Make NameList.txt"
 ZipFiles=~/Downloads/Manga/zip
-ls $ZipFiles/\(成年コミック* | cut -d [ -f2 | cut -d ] -f1 > $ZipFiles/NameList.txt
-ls $ZipFiles/\[*]* | cut -d [ -f2 | cut -d ] -f1 | cut -d "(" -f1 > $ZipFiles/NameList.txt
+ls $ZipFiles/\(成年コミック* | cut -d [ -f2 | cut -d ] -f1 > $ZipFiles/CmNameList.txt
 ls $ZipFiles/\(同人CG集* | cut -d [ -f2 | cut -d  ] -f1 > $ZipFiles/CGNameList.txt
+ls $ZipFiles/\[*]* | cut -d [ -f2 | cut -d ] -f1 | cut -d "(" -f1 > $ZipFiles/NameList.txt
 
 #-------------------
 # mkdir
 #-------------------
 echo "Make directories"
-names=$ZipFiles/NameList.txt
+names=$ZipFiles/CmNameList.txt
 while read line
 do
     echo $line
@@ -41,6 +41,17 @@ do
     mkdir $dir
     mv $ZipFiles/*$line* $dir/
 done < $names
+
+echo "Make directories"
+names=$ZipFiles/NameList.txt
+while read line
+do
+    echo $line
+    dir=$Books/$line
+    mkdir $dir
+    mv $ZipFiles/*$line* $dir/
+done < $names
+
 
 
 #-------------------
