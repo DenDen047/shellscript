@@ -58,6 +58,7 @@ done < $names
 # Finish
 #-------------------
 rm $ZipFiles/NameList.txt
+rm $ZipFiles/CmNameList.txt
 rm $ZipFiles/CGNameList.txt
 echo "Finish!!"
 
