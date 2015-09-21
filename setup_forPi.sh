@@ -13,18 +13,29 @@ echo "add Japanese Font"
 
 
 echo "install softwares..."
-sudo apt-apt update
+sudo apt-get update
+sudo apt-get install tree
 sudo apt-get install vim
 sudo apt-get install tmux
 sudo apt-get install zsh
 sudo apt-get install tree
 sudo apt-get install apache2
 sudo apt-get install python2.7 python2.7-dev python-virtualenv
-sudo apt-get install python-tweepy
+sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo apt-get install python-bs4
 sudo apt-get install ipython
+sudo pip install moviepy
+sudo apt-get install usbmount
 
-pip install moviepy
+echo "http://qiita.com/akito1986/items/be5dcd1a502aaf22010b"
+cd /usr/local/
+sudo git clone git://github.com/yyuu/pyenv.git ./pyenv
+sudo mkdir -p ./pyenv/versions ./pyenv/shims
+cd /usr/local/pyenv/plugins/
+sudo git clone git://github.com/yyuu/pyenv-virtualenv.git
+echo 'export PYENV_ROOT="/usr/local/pyenv"' | sudo tee -a /etc/profile.d/pyenv.sh
+echo 'export PATH="${PYENV_ROOT}/shims:${PYENV_ROOT}/bin:${PATH}"' | sudo tee -a /etc/profile.d/pyenv.sh
+source /etc/profile.d/pyenv.sh
 
 mkdir ~/Downloads
 
