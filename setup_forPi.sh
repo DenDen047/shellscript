@@ -6,9 +6,9 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "add Japanese Font"
-sudo localedef -f UTF-8 -i ja_JP ja_JP
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+# sudo localedef -f UTF-8 -i ja_JP ja_JP
+# export LC_CTYPE=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
 
 
 echo "install softwares..."

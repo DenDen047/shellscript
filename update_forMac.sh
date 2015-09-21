@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo "git pull..."
+echo "\ngit pull..."
 shellDir=~/Documents/shellscript/
 dotDir=~/dotfiles_forMac/
 toolDir=~/Documents/Tools/
@@ -18,18 +18,18 @@ if [ -d $toolDir ]; then
 fi
 brew file pull
 
-echo "updating..."
+echo "\nupdating..."
 pip install -U pip
 brew update
 brew upgrade --all
 brew cask update
 
-echo "cleanuping..."
+echo "\ncleanuping..."
 brew cleanup
 brew cask cleanup
 
-echo "checking..."
+echo "\nchecking..."
 brew cask doctor
 brew doctor
 
-echo "Finish!!"
+echo "\nFinish!!\n"
