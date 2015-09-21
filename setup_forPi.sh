@@ -3,6 +3,7 @@
 echo "creat SymbolicLink"
 ln -s ~/dotfiles/.zshenv ~/.zshenv
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+rm -rf ~/dotfiles/.vim/double/
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "add Japanese Font"
@@ -19,6 +20,12 @@ sudo apt-get install zsh
 sudo apt-get install tree
 sudo apt-get install apache2
 sudo apt-get install python2.7 python2.7-dev python-virtualenv
+sudo apt-get install python-tweepy
+sudo apt-get install python-bs4
+sudo apt-get install ipython
+
+pip install moviepy
+
 mkdir ~/Downloads
 
 # install MJPG-streamer
