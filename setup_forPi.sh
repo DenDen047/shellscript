@@ -20,7 +20,6 @@ sudo apt-get install tmux
 sudo apt-get install zsh
 sudo apt-get install tree
 sudo apt-get install apache2
-sudo apt-get install python2.7 python2.7-dev python-virtualenv
 sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo apt-get install python-bs4
 sudo apt-get install ipython
