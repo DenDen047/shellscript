@@ -21,11 +21,11 @@ sudo apt-get install zsh
 sudo apt-get install tree
 sudo apt-get install apache2
 sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
-sudo apt-get install python-bs4
+sudo apt-get install libfreeimage3 libfreeimage-dev
 sudo apt-get install ipython
-sudo pip install moviepy
 sudo apt-get install usbmount
 
+echo "install pyenv..."
 echo "http://qiita.com/akito1986/items/be5dcd1a502aaf22010b"
 cd /usr/local/
 sudo git clone git://github.com/yyuu/pyenv.git ./pyenv
