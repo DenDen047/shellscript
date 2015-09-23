@@ -24,6 +24,10 @@ sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev 
 sudo apt-get install libfreeimage3 libfreeimage-dev
 sudo apt-get install ipython
 sudo apt-get install usbmount
+sudo apt-get install jfbterm uim uim-anthy
+sudo apt-get install convmv
+sudo apt-get install ttf-kochi-gothic xfonts-intl-japanese xfonts-intl-japanese-big xfonts-kaname
+sudo apt-get install task-japanese task-japanese-desktop
 
 echo "install pyenv..."
 echo "http://qiita.com/akito1986/items/be5dcd1a502aaf22010b"
