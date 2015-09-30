@@ -19,6 +19,7 @@ sudo apt-get install vim
 sudo apt-get install tmux
 sudo apt-get install zsh
 sudo apt-get install tree
+sudo apt-get install rtorrent
 sudo apt-get install apache2
 sudo apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo apt-get install libfreeimage3 libfreeimage-dev
