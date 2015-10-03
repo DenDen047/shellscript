@@ -31,6 +31,7 @@ for a in ${apps[@]};do
 done
 
 echo "\ncleanuping..."
+brew prune
 brew cleanup
 brew cask cleanup
 
