@@ -4,14 +4,17 @@ echo "\ngit pull..."
 shellDir=~/Documents/shellscript/
 dotDir=~/dotfiles_forMac/
 toolDir=~/Documents/Tools/
+echo "update shellscript..."
 if [ -d $shellDir ]; then
     cd "$shellDir"
     git pull
 fi
+echo "update dotfiles..."
 if [ -d $dotDir ]; then
     cd "$dotDir"
     git pull
 fi
+echo "update Tools..."
 if [ -d $toolDir ]; then
     cd "$toolDir"
     git pull
@@ -19,7 +22,7 @@ fi
 brew file pull
 
 echo "\nupdating..."
-pip install -U pip
+pyenv exec pip install -U pip
 brew update
 brew upgrade --all
 brew cask update
@@ -40,3 +43,4 @@ brew cask doctor
 brew doctor
 
 echo "\nFinish!!\n"
+
