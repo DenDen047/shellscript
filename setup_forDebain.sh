@@ -19,6 +19,8 @@ sudo apt-get install python-pygame
 sudo apt-get install python-opengl
 sudo apt-get install python-numpy python-numpy-doc python-numpy-dbg pyhon-numpydoc
 sudo apt-get install ipython
+sudo apt-get install wireshark
+sudo apt-get install tshark
 echo -e "\n"
 
 
