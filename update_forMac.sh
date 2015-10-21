@@ -26,11 +26,26 @@ pyenv exec pip install -U pip
 brew update
 brew upgrade --all
 brew cask update
+#apps=($(brew cask list))
+#for a in ${apps[@]};do
+#  if grep -q "Not installed" < <(brew cask info $a);then
+#    brew cask install $a
+#  fi
+#done
+caskroom="/opt/homebrew-cask/Caskroom"
 apps=($(brew cask list))
 for a in ${apps[@]};do
-  if grep -q "Not installed" < <(brew cask info $a);then
+  info=$(brew cask info $a)
+  if echo "$info"| grep -q "Not installed";then
     brew cask install $a
   fi
+  current=$(echo "$info"|grep "${caskroom}/${a}"|cut -d' ' -f1)
+  for dir in $(ls ${caskroom}/${a});do
+    testdir="${caskroom}/${a}/${dir}"
+    if [ "$testdir" != "$current" ];then
+      rm -rf "$testdir"
+    fi
+  done
 done
 
 echo "\ncleanuping..."
