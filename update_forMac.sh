@@ -19,6 +19,7 @@ if [ -d $toolDir ]; then
     cd "$toolDir"
     git pull
 fi
+
 brew file pull
 
 echo "\nupdating..."
