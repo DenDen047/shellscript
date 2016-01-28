@@ -49,6 +49,10 @@ brew cask update
 #    fi
 #  done
 #done
+#
+
+brew cleanup
+brew cask cleanup
 
 echo "\ncleanuping..."
 brew prune
