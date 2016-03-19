@@ -3,7 +3,6 @@
 echo "\ngit pull..."
 shellDir=~/Documents/shellscript/
 dotDir=~/dotfiles_forMac/
-toolDir=~/Documents/Tools/
 echo "update shellscript..."
 if [ -d $shellDir ]; then
     cd "$shellDir"
@@ -12,11 +11,6 @@ fi
 echo "update dotfiles..."
 if [ -d $dotDir ]; then
     cd "$dotDir"
-    git pull
-fi
-echo "update Tools..."
-if [ -d $toolDir ]; then
-    cd "$toolDir"
     git pull
 fi
 
