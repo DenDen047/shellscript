@@ -7,20 +7,20 @@ echo -e "\n"
 
 
 echo "install some softwares..."
-sudo apt-get install openssh-server
-sudo apt-get install vim
-sudo apt-get install git
-sudo apt-get install zsh
-sudo apt-get install tmux
-sudo apt-get install ibus-mozc
-sudo apt-get install upgrade
-sudo apt-get install python2.7 python2.7-dev python-virtualenv
-sudo apt-get install python-pygame
-sudo apt-get install python-opengl
-sudo apt-get install python-numpy python-numpy-doc python-numpy-dbg pyhon-numpydoc
-sudo apt-get install ipython
-sudo apt-get install wireshark
-sudo apt-get install tshark
+sudo apt-get install -y openssh-server
+sudo apt-get install -y vim
+sudo apt-get install -y git
+sudo apt-get install -y zsh
+sudo apt-get install -y tmux
+sudo apt-get install -y ibus-mozc
+sudo apt-get install -y upgrade
+sudo apt-get install -y python2.7 python2.7-dev python-virtualenv
+sudo apt-get install -y python-pygame
+sudo apt-get install -y python-opengl
+sudo apt-get install -y python-numpy python-numpy-doc python-numpy-dbg pyhon-numpydoc
+sudo apt-get install -y ipython
+sudo apt-get install -y wireshark
+sudo apt-get install -y tshark
 echo -e "\n"
 
 

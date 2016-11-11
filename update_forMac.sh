@@ -14,6 +14,8 @@ if [ -d $dotDir ]; then
     git pull
 fi
 
+sudo tlmgr update --self --all
+
 brew file pull
 
 echo "\nupdating..."
