@@ -25,8 +25,9 @@ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-vi
 mkdir ~/Downloads
 
 echo "SSHkey setting..."
+cd ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "sh.mn.nat@gmail.com"
-echo ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 echo -e "\n"
 echo "Please paste id_rsa.pub to GitHub"
 echo -n "OK? [Y/n] "
@@ -48,9 +49,9 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.ssh/config ~/.ssh/config
 
 echo "add Japanese Font"
-# sudo localedef -f UTF-8 -i ja_JP ja_JP
-# export LC_CTYPE=en_US.UTF-8
-# export LC_ALL=en_US.UTF-8
+sudo localedef -f UTF-8 -i ja_JP ja_JP
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 echo "create symbolic link..."
 
