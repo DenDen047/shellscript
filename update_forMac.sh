@@ -21,7 +21,7 @@ brew file pull
 echo "\nupdating..."
 pyenv exec pip install -U pip
 brew update
-brew upgrade --all
+brew upgrade
 brew cask update
 #apps=($(brew cask list))
 #for a in ${apps[@]};do
