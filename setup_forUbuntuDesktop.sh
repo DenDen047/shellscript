@@ -51,7 +51,7 @@ rm -rf ~/dotfiles/.vim/bundle/
 mkdir ~/dotfiles/.vim/bundle
 
 # ====== ZSH =======
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 
 
 # ====== Sublimetext =======
